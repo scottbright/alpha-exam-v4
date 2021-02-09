@@ -1,0 +1,4 @@
+databaseChangeLog:
+  - include:
+      file: migrations/V2021_11_02_05_00__create-unused-table.yaml
+      relativeToChangelogFile: true
