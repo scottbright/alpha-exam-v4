@@ -1,4 +1,7 @@
 databaseChangeLog:
   - include:
-      file: migrations/V2021_11_02_05_00__create-unused-table.yaml
+      file: migrations/V2021_11_02_05_00__create-product-table.yaml
+      relativeToChangelogFile: true
+  - include:
+      file: migrations/V2021_11_02_13_00__insert_mock_data_into_product_table.yaml
       relativeToChangelogFile: true
