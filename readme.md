@@ -7,6 +7,14 @@
 - Lombok https://projectlombok.org/download
 - Docker https://hub.docker.com/editions/community/docker-ce-desktop-mac
 
+### Starting
+Create Database using docker-compose that we provided
+
+### Database
+Database: MSSQL
+Account: SA
+Password: yourStrong(!)Password
+
 ### Table
 - table name: product
 	- id
