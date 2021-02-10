@@ -185,5 +185,5 @@ response  when product(s) found (***the type must be the same as example***)
 
 note: HTTP status 200
 ```
-4. Please list on how can we improve the code? db, controller, etc. 
+4. Please list on how can we improve? db, controller, etc. 
 	1. example: add validation
