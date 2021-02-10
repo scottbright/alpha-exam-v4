@@ -37,7 +37,7 @@
 
 ##Tasks
 
-1. (20 mins) Create REST API for showing products related to input continent 
+1. Create REST API for showing products related to input continent 
 input
 ```
 GET: localhost:8080/v1/product?continent=asia
@@ -70,7 +70,7 @@ response when product not found
 note: HTTP status 200
 ```
 
-2. (15 mins) Create REST API for adding new product
+2. Create REST API for adding new product
 input (***the type must be the same as example***)
 ```
 POST: localhost:8080/v1/product
@@ -94,7 +94,7 @@ response when create successful (***the type must be the same as example***)
 note: HTTP status 201
 ```
 
-3. (5 mins) Modify REST API in (1) and (2) to show more field as below response
+3. Modify REST API in (1) and (2) to show more field as below response
 	1. field name = multipliedValue
 	2. field value = price * multiplier
 	3. field decimal = 6 with rounding mode Floor (1.1234567 will be shown as 1.123456, 1.123 will be shown as 1.123000)
