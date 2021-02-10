@@ -33,6 +33,7 @@ table name: product
 			- example1: 2021-02-11T15:45:01.123
 
 Mocked Data:
+![MockedData](https://github.com/scottbright/alpha-exam/blob/main/image/image.png?raw=true)
 Tasks
 
 1. (20 mins) Create REST API for showing products related to input continent 
