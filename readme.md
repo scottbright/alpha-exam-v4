@@ -1,13 +1,13 @@
 #Create REST API with JAVA Spring Boot Practice
-
-###Pre-requisites
+## Information
+### Pre-requisites
 - IntelliJ or any code editor https://www.jetbrains.com/idea/download/ 
 - Java 8 https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html
 - Gradle https://gradle.org/install/ 
 - Lombok https://projectlombok.org/download
 - Docker https://hub.docker.com/editions/community/docker-ce-desktop-mac
 
-###Table
+### Table
 - table name: product
 	- id
 		- generated value
@@ -32,10 +32,10 @@
 		- timestamp
 			- example1: 2021-02-11T15:45:01.123
 
-###Mocked Data in table
+### Mocked Data in table
 ![MockedData](https://github.com/scottbright/alpha-exam/blob/main/image/image.png?raw=true)
 
-##Tasks
+## Tasks
 
 1. Create REST API for showing products related to input continent 
 input
