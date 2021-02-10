@@ -46,18 +46,46 @@ response  when product(s) found (***the type must be the same as example***)
 ```
 [
     {
-        "id": "02d31878-829e-4c49-ac88-9894bbcdc67c",
-        "price": 123.4567,
-        "continent": "new",
-        "multiplier": 10.0,
-        "createdAt": "2021-02-10T18:30:30.137"
+        "id": "5c65721f-c21b-824f-add3-4539a3be815b",
+        "price": 555.123,
+        "continent": "asia",
+        "multiplier": 4,
+        "createdAt": "2021-01-03T00:00:00.123"
     },
     {
-        "id": "19fdd65f-5e64-4163-b9d5-9c4b20d4898e",
-        "price": 123.4567,
-        "continent": "new",
-        "multiplier": 10,
-        "createdAt": "2021-02-10T18:30:51.297"
+        "id": "7af60e83-0882-8b4a-84ff-80cec174e9a4",
+        "price": 10,
+        "continent": "asia",
+        "multiplier": 20,
+        "createdAt": "2021-01-06T00:00:00.123"
+    },
+    {
+        "id": "219014d0-e990-c840-8969-85623b2ac9ae",
+        "price": 1234,
+        "continent": "asia",
+        "multiplier": 4.999,
+        "createdAt": "2021-01-02T00:00:00.123"
+    },
+    {
+        "id": "1457d165-c2fd-ff45-97c6-9b23b155e50d",
+        "price": 9999.999999,
+        "continent": "asia",
+        "multiplier": 555.555555,
+        "createdAt": "2021-01-05T00:00:00.123"
+    },
+    {
+        "id": "084bceb5-ef34-aa47-ad78-d3b5d59e62e2",
+        "price": 11.111111,
+        "continent": "asia",
+        "multiplier": 2.5,
+        "createdAt": "2021-01-01T00:00:00"
+    },
+    {
+        "id": "5c405847-f1e5-274b-bd5b-d9df7db36bc3",
+        "price": 456.123456,
+        "continent": "asia",
+        "multiplier": 4.123456,
+        "createdAt": "2021-01-04T00:00:00.123"
     }
 ]
 
