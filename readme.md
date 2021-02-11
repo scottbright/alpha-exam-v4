@@ -86,7 +86,7 @@ response  when product(s) found (***the type must be the same as example***)
         "price": 11.111111,
         "continent": "asia",
         "multiplier": 2.5,
-        "createdAt": "2021-01-01T00:00:00"
+        "createdAt": "2021-01-01T00:00:00.000"
     },
     {
         "id": "5c405847-f1e5-274b-bd5b-d9df7db36bc3",
@@ -178,7 +178,7 @@ response  when product(s) found (***the type must be the same as example***)
         "price": 11.111111,
         "continent": "asia",
         "multiplier": 2.5,
-        "createdAt": "2021-01-01T00:00:00",
+        "createdAt": "2021-01-01T00:00:00.000",
         "multipliedValue": 27.777777
     },
     {
