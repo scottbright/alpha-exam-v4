@@ -11,9 +11,9 @@
 Create Database using docker-compose that we provided
 
 ### Database
-Database: MSSQL
-Account: SA
-Password: yourStrong(!)Password
+- Database: MSSQL
+- Account: SA
+- Password: yourStrong(!)Password
 
 ### Table
 - table name: product
