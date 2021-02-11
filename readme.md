@@ -98,6 +98,7 @@ response  when product(s) found (***the type must be the same as example***)
 ]
 
 note: HTTP status 200
+note2: createdAt always show 3 digits of milliseconds
 ```
 response when product not found
 ```
@@ -128,6 +129,7 @@ response when create successful (***the type must be the same as example***)
 }
 
 note: HTTP status 201
+note2: createdAt always show 3 digits of milliseconds
 ```
 
 ### 3. Modify REST API in (1) and (2) to show more field as below response
@@ -192,6 +194,7 @@ response  when product(s) found (***the type must be the same as example***)
 ]
 
 note: HTTP status 200
+note2: createdAt always show 3 digits of milliseconds
 ```
 ### 4. Please list on what and how can we improve?
 example: add validation
