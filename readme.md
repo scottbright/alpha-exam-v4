@@ -5,7 +5,8 @@
 - Java 8 https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html
 - Gradle https://gradle.org/install/ 
 - Lombok https://projectlombok.org/download
-- Docker https://hub.docker.com/editions/community/docker-ce-desktop-mac
+- (MAC) Docker https://hub.docker.com/editions/community/docker-ce-desktop-mac
+- (Windows) Docker https://docs.docker.com/desktop/windows/install/
 
 ### Starting
 Create Database using docker-compose that we provided
