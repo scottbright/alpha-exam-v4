@@ -197,5 +197,5 @@ response  when product(s) found (***the type must be the same as example***)
 note: HTTP status 200
 note2: createdAt always show 3 digits of milliseconds
 ```
-### 4. Please list on what and how can we improve?
-example: add validation
+### 4. Additional Interview Part
+Example: Please list on what and how can we improve?
