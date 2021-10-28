@@ -7,6 +7,7 @@
 - Lombok https://projectlombok.org/download
 - (MAC) Docker https://hub.docker.com/editions/community/docker-ce-desktop-mac
 - (Windows) Docker https://docs.docker.com/desktop/windows/install/
+- Postman https://www.postman.com/downloads/ 
 
 ### Starting
 Create Database using docker-compose that we provided
