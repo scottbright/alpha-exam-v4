@@ -54,7 +54,7 @@ Create connection to database
 			- example1: 2021-02-11T15:45:01.123
 
 ### Prepared Data in table
-![MockedData](https://github.com/scottbright/alpha-exam/blob/main/image/image2.png?raw=true)
+![MockedData](https://github.com/scottbright/alpha-exam-rahul/blob/main/image/image2.png?raw=true)
 
 ## Tasks
 
