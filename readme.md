@@ -28,17 +28,17 @@ Create connection to database
 			- example2: a5d732a7-030a-45e4-b136-f9e11f0a3070
 	- name
 		- varchar(20)
-			- example1: Brazil
-			- example2: China			
+			- example1: "Brazil"
+			- example2: "China"			
 	- population
 		- varchar(20)
 			- example1: "213896253"
 			- example2: "146171015"
 	- continent
 		- varchar(10)
-			- example1: asia
-			- example2: Asia
-			- example3: america
+			- example1: "asia"
+			- example2: "Asia"
+			- example3: "america"
 	- average_age
 		- varchar(3)
 			- example1: "40"
