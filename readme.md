@@ -58,7 +58,7 @@ Create connection to database
 
 ## Tasks
 
-### 1. Create REST API for showing countries related to input continent with insensitive case ssorting by population ASC
+### 1. Create REST API for showing countries related to input continent with insensitive case sorting by population ASC
 input
 ```
 GET: localhost:8080/v2/country?continent=asia
@@ -71,7 +71,7 @@ response  when country(s) found (***the type must be the same as example***)
         "name": "India"
         "population": 1383887228,
         "continent": "asia",
-        "average_age": 40,
+        "averageAge": 40,
         "divisor": 4.999,
         "createdAt": "2021-01-02T00:00:00.123"
     },
@@ -80,7 +80,7 @@ response  when country(s) found (***the type must be the same as example***)
         "name": "China"
         "population": 1400000000,
         "continent": "Asia",
-        "average_age": 50,
+        "averageAge": 50,
         "divisor": 2.5,
         "createdAt": "2021-01-01T00:00:00.000"
     }
@@ -105,7 +105,7 @@ POST: localhost:8080/v2/country
     "name": "Thailand"
     "population": 77000000,
     "continent": "Asia",
-    "average_age": 30,
+    "averageAge": 30,
     "divisor": 9
 }
 ```
@@ -116,7 +116,7 @@ response when create successful (***the type must be the same as example***)
     "name": "Thailand"
     "population": 77000000,
     "continent": "Asia",
-    "average_age": 30,
+    "averageAge": 30,
     "divisor": 9,
     "createdAt": "2021-01-02T00:00:00.123"
 }
@@ -143,7 +143,7 @@ response  when country(s) found (***the type must be the same as example***)
         "name": "Thailand"
         "population": 77000000,
         "continent": "Asia",
-        "average_age": 30,
+        "averageAge": 30,
         "divisor": 9,
         "createdAt": "2021-01-02T00:00:00.123",
         "dividedValue": 8555555.555555
@@ -153,7 +153,7 @@ response  when country(s) found (***the type must be the same as example***)
         "name": "India"
         "population": 1383887228,
         "continent": "asia",
-        "average_age": 40,
+        "averageAge": 40,
         "divisor": 4.999,
         "createdAt": "2021-01-02T00:00:00.123",
         "dividedValue": 276832812.162432
@@ -163,7 +163,7 @@ response  when country(s) found (***the type must be the same as example***)
         "name": "China"
         "population": 1400000000,
         "continent": "Asia",
-        "average_age": 50,
+        "averageAge": 50,
         "divisor": 2.5,
         "createdAt": "2021-01-01T00:00:00.000",
         "dividedValue": 560000000.000000
@@ -180,7 +180,7 @@ POST: localhost:8080/v2/country
     "name": "Thailand"
     "population": 77000000,
     "continent": "Asia",
-    "average_age": 30,
+    "averageAge": 30,
     "divisor": 9
 }
 ```
@@ -191,7 +191,7 @@ response when create successful (***the type must be the same as example***)
     "name": "Thailand"
     "population": 77000000,
     "continent": "Asia",
-    "average_age": 30,
+    "averageAge": 30,
     "divisor": 9,
     "createdAt": "2021-01-02T00:00:00.123",
     "dividedValue": 560000000.000000
