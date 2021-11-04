@@ -14,7 +14,7 @@
 Create Database using docker-compose that we provided
 
 ### Database
-Create connection to database
+We already set connection to Database
 - Database: MSSQL
 - Account: SA
 - Password: yourStrong(!)Password
