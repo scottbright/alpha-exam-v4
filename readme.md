@@ -8,195 +8,197 @@
 - (MAC) Docker https://hub.docker.com/editions/community/docker-ce-desktop-mac
 - (Windows) Docker https://docs.docker.com/desktop/windows/install/
 - Postman https://www.postman.com/downloads/ 
+- Github account https://github.com/
 
 ### Starting
 Create Database using docker-compose that we provided
 
 ### Database
+Create connection to database
 - Database: MSSQL
 - Account: SA
 - Password: yourStrong(!)Password
 
 ### Table
-- table name: product
+- table name: country
 	- id
 		- generated value
 		- uuid
 			- example1: b5ce4b08-34ef-47aa-ad78-d3b5d59e62e2
 			- example2: a5d732a7-030a-45e4-b136-f9e11f0a3070
-	- price
+	- name
 		- varchar(20)
-			- example1: 11.111111
-			- example2: 10
+			- example1: Brazil
+			- example2: China			
+	- population
+		- varchar(20)
+			- example1: "213896253"
+			- example2: "146171015"
 	- continent
 		- varchar(10)
 			- example1: asia
-			- example2: europe
+			- example2: Asia
 			- example3: america
-	- multiplier
+	- average_age
+		- varchar(3)
+			- example1: "40"
+			- example2: "70"
+			- example3: "55"			
+	- divisor
 		- varchar(10)
-			- example1: 2.5
-			- example2: 88.888888
+			- example1: "2.5"
+			- example2: "9"
 	- created_at
 		- generated value
 		- timestamp
 			- example1: 2021-02-11T15:45:01.123
 
-### Mocked Data in table
-![MockedData](https://github.com/scottbright/alpha-exam/blob/main/image/image.png?raw=true)
+### Prepared Data in table
+![MockedData](https://github.com/scottbright/alpha-exam/blob/main/image/image2.png?raw=true)
 
 ## Tasks
 
-### 1. Create REST API for showing products related to input continent 
+### 1. Create REST API for showing countries related to input continent with insensitive case ssorting by population ASC
 input
 ```
-GET: localhost:8080/v1/product?continent=asia
+GET: localhost:8080/v2/country?continent=asia
 ```
-response  when product(s) found (***the type must be the same as example***)
+response  when country(s) found (***the type must be the same as example***)
 ```
 [
     {
-        "id": "5c65721f-c21b-824f-add3-4539a3be815b",
-        "price": 555.123,
+        "id": "d0149021-90e9-40c8-8969-85623b2ac9ae",
+        "name": "India"
+        "population": 1383887228,
         "continent": "asia",
-        "multiplier": 4,
-        "createdAt": "2021-01-03T00:00:00.123"
-    },
-    {
-        "id": "7af60e83-0882-8b4a-84ff-80cec174e9a4",
-        "price": 10,
-        "continent": "asia",
-        "multiplier": 20,
-        "createdAt": "2021-01-06T00:00:00.123"
-    },
-    {
-        "id": "219014d0-e990-c840-8969-85623b2ac9ae",
-        "price": 1234,
-        "continent": "asia",
-        "multiplier": 4.999,
+        "average_age": 40,
+        "divisor": 4.999,
         "createdAt": "2021-01-02T00:00:00.123"
     },
     {
-        "id": "1457d165-c2fd-ff45-97c6-9b23b155e50d",
-        "price": 9999.999999,
-        "continent": "asia",
-        "multiplier": 555.555555,
-        "createdAt": "2021-01-05T00:00:00.123"
-    },
-    {
-        "id": "084bceb5-ef34-aa47-ad78-d3b5d59e62e2",
-        "price": 11.111111,
-        "continent": "asia",
-        "multiplier": 2.5,
+        "id": "b5ce4b08-34ef-47aa-ad78-d3b5d59e62e2",
+        "name": "China"
+        "population": 1400000000,
+        "continent": "Asia",
+        "average_age": 50,
+        "divisor": 2.5,
         "createdAt": "2021-01-01T00:00:00.000"
-    },
-    {
-        "id": "5c405847-f1e5-274b-bd5b-d9df7db36bc3",
-        "price": 456.123456,
-        "continent": "asia",
-        "multiplier": 4.123456,
-        "createdAt": "2021-01-04T00:00:00.123"
     }
 ]
 
 note: HTTP status 200
 note2: createdAt always show 3 digits of milliseconds
 ```
-response when product not found
+response when country not found
 ```
 []
 
 note: HTTP status 200
 ```
 
-### 2. Create REST API for adding new product
+### 2. Create REST API for adding new country
 input (***the type must be the same as example***)
 ```
-POST: localhost:8080/v1/product
+POST: localhost:8080/v2/country
 
 {
-    "price": 123.4567,
-    "continent": "new",
-    "multiplier": 10
+    "name": "Thailand"
+    "population": 77000000,
+    "continent": "Asia",
+    "average_age": 30,
+    "divisor": 9
 }
 ```
 response when create successful (***the type must be the same as example***)
 ```
 {
-    "id": "ed2ae6f0-deba-4007-8e02-f46f4a7e388f",
-    "price": 123.4567,
-    "continent": "new",
-    "multiplier": 10,
-    "createdAt": "2021-02-10T18:33:37.394"
+    "id": "10149021-90e9-40c8-8969-85623b2ac999",
+    "name": "Thailand"
+    "population": 77000000,
+    "continent": "Asia",
+    "average_age": 30,
+    "divisor": 9,
+    "createdAt": "2021-01-02T00:00:00.123"
 }
 
 note: HTTP status 201
 note2: createdAt always show 3 digits of milliseconds
+note3: createdAt is crated time in database
 ```
 
 ### 3. Modify REST API in (1) and (2) to show more field as below response
-	1. field name = multipliedValue
-	2. field value = price * multiplier
-	3. field decimal = 6 with rounding mode Floor (1.1234567 will be shown as 1.123456, 1.123 will be shown as 1.123000)
+	1. field name = dividedValue
+	2. field value = population ÷ divisor
+	3. field decimal = always show 6 digits with rounding mode Floor (1.1234567 will be shown as 1.123456, 1.123 will be shown as 1.123000)
+(1)
 input
 ```
-GET: localhost:8080/v1/product?continent=asia
+GET: localhost:8080/v2/country?continent=asia
 ```
-response  when product(s) found (***the type must be the same as example***)
+response  when country(s) found (***the type must be the same as example***)
 ```
 [
     {
-        "id": "5c65721f-c21b-824f-add3-4539a3be815b",
-        "price": 555.123,
-        "continent": "asia",
-        "multiplier": 4,
-        "createdAt": "2021-01-03T00:00:00.123",
-        "multipliedValue": 2220.492000
-    },
-    {
-        "id": "7af60e83-0882-8b4a-84ff-80cec174e9a4",
-        "price": 10,
-        "continent": "asia",
-        "multiplier": 20,
-        "createdAt": "2021-01-06T00:00:00.123",
-        "multipliedValue": 200.000000
-    },
-    {
-        "id": "219014d0-e990-c840-8969-85623b2ac9ae",
-        "price": 1234,
-        "continent": "asia",
-        "multiplier": 4.999,
+        "id": "10149021-90e9-40c8-8969-85623b2ac999",
+        "name": "Thailand"
+        "population": 77000000,
+        "continent": "Asia",
+        "average_age": 30,
+        "divisor": 9,
         "createdAt": "2021-01-02T00:00:00.123",
-        "multipliedValue": 6168.766000
+        "dividedValue": 8555555.555555
     },
     {
-        "id": "1457d165-c2fd-ff45-97c6-9b23b155e50d",
-        "price": 9999.999999,
+        "id": "d0149021-90e9-40c8-8969-85623b2ac9ae",
+        "name": "India"
+        "population": 1383887228,
         "continent": "asia",
-        "multiplier": 555.555555,
-        "createdAt": "2021-01-05T00:00:00.123",
-        "multipliedValue": 5555555.549444
+        "average_age": 40,
+        "divisor": 4.999,
+        "createdAt": "2021-01-02T00:00:00.123",
+        "dividedValue": 276832812.162432
     },
     {
-        "id": "084bceb5-ef34-aa47-ad78-d3b5d59e62e2",
-        "price": 11.111111,
-        "continent": "asia",
-        "multiplier": 2.5,
+        "id": "b5ce4b08-34ef-47aa-ad78-d3b5d59e62e2",
+        "name": "China"
+        "population": 1400000000,
+        "continent": "Asia",
+        "average_age": 50,
+        "divisor": 2.5,
         "createdAt": "2021-01-01T00:00:00.000",
-        "multipliedValue": 27.777777
-    },
-    {
-        "id": "5c405847-f1e5-274b-bd5b-d9df7db36bc3",
-        "price": 456.123456,
-        "continent": "asia",
-        "multiplier": 4.123456,
-        "createdAt": "2021-01-04T00:00:00.123",
-        "multipliedValue": 1880.805001
+        "dividedValue": 560000000.000000
     }
 ]
+
+```
+(2)
+```
+POST: localhost:8080/v2/country
+```
+```
+{
+    "name": "Thailand"
+    "population": 77000000,
+    "continent": "Asia",
+    "average_age": 30,
+    "divisor": 9
+}
+```
+response when create successful (***the type must be the same as example***)
+```
+{
+    "id": "10149021-90e9-40c8-8969-85623b2ac999",
+    "name": "Thailand"
+    "population": 77000000,
+    "continent": "Asia",
+    "average_age": 30,
+    "divisor": 9,
+    "createdAt": "2021-01-02T00:00:00.123",
+    "dividedValue": 560000000.000000
+}
 
 note: HTTP status 200
 note2: createdAt always show 3 digits of milliseconds
 ```
-### 4. Additional Interview Part
-Example: Please list on what and how can we improve?
+### 4. Create Unit Test for service
+### 5. Additional Interview Part
