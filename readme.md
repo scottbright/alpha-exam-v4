@@ -64,7 +64,7 @@ We already set connection to Database
 			- example1: 2021-02-11T15:45:01.123
 
 ### Prepared Data in table
-![MockedData](https://github.com/scottbright/alpha-exam-rahul/blob/main/image/image2.png?raw=true)
+![MockedData](https://github.com/scottbright/alpha-exam-v3/blob/main/image/image2.png?raw=true)
 
 ## Tasks
 
