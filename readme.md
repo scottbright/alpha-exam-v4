@@ -7,6 +7,7 @@
 - Make sure you have stable internet
 - Please be in private area that no one else will walk in (or make some noise) during test
 - Please dp the test in TDD way.
+- Searching in Google is allowed. But we will always take note on what you searched.
 - Sharing the exam to other people is prohibited
 
 ### Pre-requisites
