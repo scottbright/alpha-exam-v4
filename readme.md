@@ -1,5 +1,12 @@
 # Create REST API with JAVA Spring Boot Practice
 ## Information
+### Exam environment agreement
+- Before begin exam process turn camera around to show surrounding
+- Use only one monitor
+- Always turn on video and microphone
+- Make sure you have stable internet
+- Please be in private area that no one else will walk in (or make some noise) during test
+
 ### Pre-requisites
 - IntelliJ or any code editor https://www.jetbrains.com/idea/download/ 
 - Java 8 https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html
