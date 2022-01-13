@@ -30,7 +30,7 @@ We already set connection to Database
 - Password: yourStrong(!)Password
 
 ### Table
-- table name: country
+- table1 name: electricity_bill
 	- id
 		- generated value
 		- uuid
@@ -38,33 +38,62 @@ We already set connection to Database
 			- example2: a5d732a7-030a-45e4-b136-f9e11f0a3070
 	- name
 		- varchar(20)
-			- example1: "Brazil"
-			- example2: "China"			
-	- population
-		- varchar(20)
-			- example1: "213896253"
-			- example2: "146171015"
-	- continent
+			- example1: "John Doe"
+			- example2: "Adam Smith"			
+	- charged_at
+		- timestamp
+			- example1: 2021-01-31T00:00:00.000
+			- example2: 2021-02-28T00:00:00.000
+			- example3: 2021-03-31T00:00:00.000
+	- country
 		- varchar(10)
-			- example1: "asia"
-			- example2: "Asia"
-			- example3: "america"
-	- average_age
-		- varchar(3)
-			- example1: "40"
-			- example2: "70"
-			- example3: "55"			
-	- divisor
-		- varchar(10)
-			- example1: "2.5"
-			- example2: "9"
+			- example1: "Thailand"
+			- example2: "Japan"
+			- example3: "Singapore"
+	- unit
+		- decimal
+			- example1: 10.57
+			- example2: 11.23
+			- example3: 20.00
 	- created_at
 		- generated value
 		- timestamp
-			- example1: 2021-02-11T15:45:01.123
+			- example1: 2021-01-31T12:00:00.000
 
-### Prepared Data in table
-![MockedData](https://github.com/scottbright/alpha-exam-v3/blob/main/image/image2.png?raw=true)
+- table1 name: electricity_bill
+	- id
+		- generated value
+		- uuid
+			- example1: b5ce4b08-34ef-47aa-ad78-d3b5d59e62e2
+			- example2: a5d732a7-030a-45e4-b136-f9e11f0a3070
+	- name
+		- varchar(20)
+			- example1: "John Doe"
+			- example2: "Adam Smith"
+	- charged_at
+		- timestamp
+			- example1: 2021-01-31T00:00:00.000
+			- example2: 2021-02-28T00:00:00.000
+			- example3: 2021-03-31T00:00:00.000
+	- country
+		- varchar(10)
+			- example1: "Thailand"
+			- example2: "Japan"
+			- example3: "Singapore"
+	- unit
+		- decimal
+			- example1: 10.57
+			- example2: 11.23
+			- example3: 20.00
+	- created_at
+		- generated value
+		- timestamp
+			- example1: 2021-01-31T12:00:00.000
+### Mocked Data in table1
+![MockedData](https://github.com/scottbright/alpha-exam-v4/blob/main/image/image1.png?raw=true)
+
+### Mocked Data in table2
+![MockedData](https://github.com/scottbright/alpha-exam-v4/blob/main/image/image2.png?raw=true)
 
 ## Tasks
 
