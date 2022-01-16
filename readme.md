@@ -101,24 +101,30 @@ GET: localhost:8080/v2/cost?name=John&startdate=20210101&enddate=20211231
 ```
 response when country,startdate and enddate found (***the type must be the same as example***)
 ```
-[
-    {
-        "id": "d0149021-90e9-40c8-8969-85623b2ac9ae",
-        "name": "India"
-        "population": 1383887228,
-        "continent": "asia",
-        "averageAge": 40,
-        "divisor": 4.999,
-        "createdAt": "2021-01-02T00:00:00.123"
-    }
-]
+{
+	"header": {
+		"totalUnit": 123,  // sum of all unit in data
+		"costPerUnit": 10, // from cost per unit table
+		"totalCost": 1230 // multiplication of totalUnit and costPerUnit
+	},
+	"data": [
+		{
+			"id",
+			"name",
+			"billedAt",
+			"country",
+			"unit",
+			"createdAt"
+		}
+	]
+}
 
 note: HTTP status 200
 note2: createdAt always show 3 digits of milliseconds
 ```
-response when country not found
+response when name not found
 ```
-[]
+{} or null
 
 note: HTTP status 200
 ```
