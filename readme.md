@@ -99,7 +99,7 @@ input
 ```
 GET: localhost:8080/v2/cost?name=John&startdate=20210101&enddate=20211231
 ```
-response when country,startdate and enddate found (***the type must be the same as example***)
+response when country, startdate and enddate found (***the type must be the same as example***)
 ```
 {
 	"header": {
