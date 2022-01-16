@@ -4,7 +4,7 @@ databaseChangeLog:
       author: Byte
       changes:
         - createTable:
-            tableName: country
+            tableName: electricity_bill
             columns:
               - column:
                   name: id
@@ -18,23 +18,18 @@ databaseChangeLog:
                   constraints:
                     nullable: false
               - column:
-                  name: population
-                  type: varchar(20)
+                  name: billed_at
+                  type: timestamp
                   constraints:
                     nullable: false
               - column:
-                  name: continent
+                  name: country
                   type: varchar(10)
                   constraints:
                     nullable: false
               - column:
-                  name: average_age
-                  type: varchar(3)
-                  constraints:
-                    nullable: false
-              - column:
-                  name: divisor
-                  type: varchar(20)
+                  name: unit
+                  type: decimal
                   constraints:
                     nullable: false
               - column:

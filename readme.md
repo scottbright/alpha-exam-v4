@@ -38,9 +38,10 @@ We already set connection to Database
 			- example2: a5d732a7-030a-45e4-b136-f9e11f0a3070
 	- name
 		- varchar(20)
-			- example1: "John Doe"
-			- example2: "Adam Smith"			
-	- charged_at
+            - example1: "John Doe"
+            - example2: "Adam Smith"	
+            - example3: "Mary White"
+	- billed_at
 		- timestamp
 			- example1: 2021-01-31T00:00:00.000
 			- example2: 2021-02-28T00:00:00.000
@@ -52,35 +53,26 @@ We already set connection to Database
 			- example3: "Singapore"
 	- unit
 		- decimal
-			- example1: 10.57
-			- example2: 11.23
-			- example3: 20.00
+			- example1: 50.57
+			- example2: 40.23
+			- example3: 60.00
 	- created_at
 		- generated value
 		- timestamp
 			- example1: 2021-01-31T12:00:00.000
 
-- table1 name: electricity_bill
+- table2 name: electricity_cost_per_unit   (all in USD)
 	- id
 		- generated value
 		- uuid
 			- example1: b5ce4b08-34ef-47aa-ad78-d3b5d59e62e2
 			- example2: a5d732a7-030a-45e4-b136-f9e11f0a3070
-	- name
-		- varchar(20)
-			- example1: "John Doe"
-			- example2: "Adam Smith"
-	- charged_at
-		- timestamp
-			- example1: 2021-01-31T00:00:00.000
-			- example2: 2021-02-28T00:00:00.000
-			- example3: 2021-03-31T00:00:00.000
 	- country
 		- varchar(10)
 			- example1: "Thailand"
 			- example2: "Japan"
 			- example3: "Singapore"
-	- unit
+	- cost_per_unit
 		- decimal
 			- example1: 10.57
 			- example2: 11.23
