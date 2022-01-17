@@ -61,7 +61,7 @@ We already set connection to Database
 		- timestamp
 			- example1: 2021-01-31T12:00:00.000
 
-- table2 name: electricity_cost_per_unit   (all in USD)
+- table2 name: cost_per_unit   (all in USD)
 	- id
 		- generated value
 		- uuid
