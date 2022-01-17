@@ -6,7 +6,6 @@
 - Always turn on video and microphone
 - Make sure you have stable internet
 - Please be in private area that no one else will walk in (or make some noise) during test
-- Please do the test in TDD way.
 - Searching in Google is allowed. But we will always take note on what you searched.
 - Sharing the exam to other people is prohibited
 
@@ -128,3 +127,5 @@ response when name not found
 
 note: HTTP status 200
 ```
+
+### 2. some unit test
