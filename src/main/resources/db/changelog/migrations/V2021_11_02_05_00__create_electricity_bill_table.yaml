@@ -29,7 +29,7 @@ databaseChangeLog:
                     nullable: false
               - column:
                   name: unit
-                  type: decimal
+                  type: varchar(10)
                   constraints:
                     nullable: false
               - column:

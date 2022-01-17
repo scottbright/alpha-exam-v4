@@ -18,8 +18,8 @@ databaseChangeLog:
                   constraints:
                     nullable: false
               - column:
-                  name: unit
-                  type: decimal
+                  name: cost_per_unit
+                  type: varchar(10)
                   constraints:
                     nullable: false
               - column:

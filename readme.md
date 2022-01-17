@@ -51,10 +51,10 @@ We already set connection to Database
 			- example2: "Japan"
 			- example3: "Singapore"
 	- unit
-		- decimal
-			- example1: 50.57
-			- example2: 40.23
-			- example3: 60.00
+		- varchar(10)
+			- example1: "50.57"
+			- example2: "40.23"
+			- example3: "60.00"
 	- created_at
 		- generated value
 		- timestamp
@@ -72,10 +72,10 @@ We already set connection to Database
 			- example2: "Japan"
 			- example3: "Singapore"
 	- cost_per_unit
-		- decimal
-			- example1: 10.00
-			- example2: 20.00
-			- example3: 30.00
+		- varchar(10)
+			- example1: "10"
+			- example2: "20"
+			- example3: "30"
 	- created_at
 		- generated value
 		- timestamp

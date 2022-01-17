@@ -13,7 +13,7 @@ databaseChangeLog:
                   name: country
                   value: "Thailand"
               - column:
-                  name: unit
+                  name: cost_per_unit
                   value: "10"
               - column:
                   name: created_at
@@ -28,7 +28,7 @@ databaseChangeLog:
                   name: country
                   value: "Japan"
               - column:
-                  name: unit
+                  name: cost_per_unit
                   value: "20"
               - column:
                   name: created_at
@@ -43,7 +43,7 @@ databaseChangeLog:
                   name: country
                   value: "Singapore"
               - column:
-                  name: unit
+                  name: cost_per_unit
                   value: "30"
               - column:
                   name: created_at
