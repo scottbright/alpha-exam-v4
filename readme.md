@@ -210,7 +210,10 @@ note: HTTP status 200
 ```
 response when name not found
 ```
-{} or null
+{
+    "header": null,
+    "data": null
+}
 
 note: HTTP status 200
 ```
